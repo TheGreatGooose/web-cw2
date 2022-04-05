@@ -1,0 +1,22 @@
+doctype html
+html
+  head
+    title Note-Taker
+    link(rel='stylesheet' type='text/css' href='/assets/css/styles.css')
+  body.page-create
+    header
+      h1
+        a(href='/') Note-Taker
+      ul
+        li
+          a(href='/notes') All notes
+        li
+          a(href='/notes/create') Add note
+        li
+          a(href='/favorite') Favorite
+
+    main
+      block content
+    
+    section.footer_section(style="margin-top: 200px;")
+      p Copyright &copy; 2022 This web application was created to fulfill Web Technology module’s requirements and does not represent an actual company or service

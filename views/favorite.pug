@@ -1,0 +1,10 @@
+extend layout
+
+block content
+	ul.notes-list
+		if notes.length == 0
+			div.message(style="background-color: red;") You don't have any favorited notes
+		each note, index in notes
+			li
+				a(href="/notes/" + note.id)= note.title
+				a(href="/notes/" + note.id + "/unfavorite").delete Remove from Favorites

@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap');
+
+body {
+	max-width: 1200px;
+	margin: 0 auto;
+	font-family: 'Merriweather', serif;
+	padding: 0 20px;
+}
+header {
+	border-bottom: 1px solid #eee;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+header h1 {
+	font-weight: 900;
+	font-size: 32px;
+	margin: 0;
+}
+header a {
+	text-decoration: none;
+	color: #222;
+}
+header a:hover {
+	color: green;
+}
+header ul li {
+	display: inline-block;
+	list-style: none;
+	margin: 0 10px;
+	font-weight: 300;
+}
+
+.page-home main {
+	margin-top: 200px;
+}
+main p {
+	font-size: 2rem;
+	font-weight: 300;
+	margin: 15px 0;
+}
+
+main a.button {
+	border: 1px solid blue;
+	text-decoration: none;
+	color: white;
+	background-color: #1e21be;
+	padding: 15px 40px;
+	display: inline-block;
+}
+
+.foo {
+	margin-top: 150px;
+}
+
+.page-create h2 {
+	font-weight: normal;
+}
+.page-create input[type="text"],
+.page-create textarea {
+	display: block;
+	padding: 10px;
+	font-size: 1rem;
+	border: 1px solid #ccc;
+	border-radius: 0;
+	margin-bottom: 20px;
+	width: 50%;
+}
+
+.page-create input[type="submit"]{
+	text-decoration: none;
+	color: white;
+	background-color: #1e21be;
+	padding: 15px 40px;
+	display: inline-block;
+	border: none;
+}
+
+.message {
+	background-color: green;
+	color: white;
+	padding: 20px;
+	margin: 10px;
+}
+
+ul.notes-list {
+	list-style: none;
+	padding: 0;
+}
+
+ul.notes-list li {
+	padding: 15px;
+	border-bottom: 1px dashed #ccc;
+}
+
+a.delete {
+	float: right;
+	text-decoration: none;
+	background-color: red;
+	color: white;
+	font-size: 0.8em;
+	padding: 5px 10px;
+}
+
+a.small-button {
+	font-size: 0.8rem;
+	text-decoration: none;
+	background-color: orange;
+	color: white;
+	padding: 5px 10px;
+	float: right;
+}
+
+.footer_section {
+	background-color: #222;
+	padding: 20px 0;
+	font-family: 'Poppins', sans-serif;
+}
+  
+.footer_section p {
+	color: #eee;
+	margin: 0;
+	text-align: center;
+}

@@ -1,0 +1,16 @@
+extend layout
+
+block content
+  h2 Update note
+
+  if show
+    div.message Your note was successfully updated.
+  
+  form(method="post" action=`/notes/${ note.id }/update`)
+    label(for="title") Title
+    input(type="text" name="title" id="title" value=note.title required)
+
+    label(for="body") Body
+    textarea(name="details" id="body" rows="10" required) #{note.body}
+
+    input(type="submit" value="Update note")

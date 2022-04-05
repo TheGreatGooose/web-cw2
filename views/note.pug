@@ -1,0 +1,12 @@
+extend layout
+
+block content
+	h1= "Title: " + note.title
+		if note.favorite
+			a(href="/notes/" + note.id + "/unfavorite" style="margin-left: 5px;").small-button Remove from Favorites
+		else 
+			a(href="/notes/" + note.id + "/favorite" style="background-color: orange; margin-left: 5px;").small-button Favorite
+		a(href="/notes/" + note.id + "/update" style="background-color: green; margin-left: 5px;").small-button Update
+		a(href="/notes/" + note.id + "/delete" style="background-color: red; margin-left: 5px;").small-button Delete
+	h1= "Body: " 
+	p= note.body

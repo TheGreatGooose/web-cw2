@@ -1,0 +1,13 @@
+extend layout
+
+block content
+	ul.notes-list
+		each note in notes
+			li
+				a(href="/notes/" + note.id)= note.title
+				if note.favorite
+					a(href="/notes/" + note.id + "/unfavorite" style="margin-left: 5px;").delete Remove from Favorites
+				else 
+					a(href="/notes/" + note.id + "/favorite" style="background-color: orange; margin-left: 5px;").delete Favorite
+				a(href="/notes/" + note.id + "/update" style="background-color: green; margin-left: 5px;").delete Update
+				a(href="/notes/" + note.id + "/delete" style="").delete Delete
