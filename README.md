@@ -1,7 +1,12 @@
 # Web Technology CW2 by 00011111  
 
 ## About  
-dcodsjmxcodnmciuef  
+
+Note-Taker is a modern tool to manage your notes!
+
+You can create notes, delete them, update them, differentiate favorite notes.
+
+Created by WIUT 00011111 Student.  
 
 ## Instructions:  
 
